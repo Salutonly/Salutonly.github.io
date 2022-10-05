@@ -10,13 +10,16 @@ npm run build
 cd public
 
 git init
-git add .
+git add -A
 git commit -m 'deploy'
 
-git remote add origin git@github.com:salutonly/salutonly.github.io.git
+# git remote add origin git@github.com:salutonly/salutonly.github.io.git
 
-git branch -M main
-git push -u origin main
+# git branch -M main
+# git push -u origin main
+
+git push -f git@github.com:salutonly/salutonly.github.io.git main
+
 
 cd ../
-rm -rf public
+# rm -rf public
