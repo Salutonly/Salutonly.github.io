@@ -1,0 +1,22 @@
+{
+  "name": "keep-alive-keep-curious",
+  "version": "1.0.0",
+  "description": "Rachelle's Home",
+  "main": "index.js",
+  "repository": "https://salutonly.github.io",
+  "author": "Rachelle",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "deploy": "bash scripts/deploy.sh",
+    "push": "bash scripts/push.sh"
+  },
+  "dependencies": {
+    "vuepress": "^2.0.0-beta.51",
+    "vuepress-theme-reco": "^2.0.0-beta.41"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
