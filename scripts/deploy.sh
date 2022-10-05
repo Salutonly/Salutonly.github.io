@@ -7,9 +7,9 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd ../.vuepress/public
+cd Blog/.vuepress/public
 
-# git init
+git init
 git add -A
 git commit -m 'deploy'
 
