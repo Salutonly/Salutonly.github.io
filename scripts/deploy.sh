@@ -13,7 +13,7 @@ npm run build
 git add .
 git commit -m 'deploy'
 
-# git remote add origin git@github.com:salutonly/salutonly.github.io.git
+git remote add origin git@github.com:salutonly/salutonly.github.io.git
 
 # git branch -M main
 # git push -u origin main
