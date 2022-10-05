@@ -7,10 +7,10 @@ set -e
 npm run build
 
 # 进入生成的文件夹
-cd Blog/.vuepress/public
+cd public
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
 
 # git remote add origin git@github.com:salutonly/salutonly.github.io.git

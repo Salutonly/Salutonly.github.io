@@ -5,6 +5,7 @@ export default defineUserConfig({
   title: "Rachelle's Home",
   description: 'Code & Jazz & Math',
   dest: 'public',
+  base: '/salutonly.github.io/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
