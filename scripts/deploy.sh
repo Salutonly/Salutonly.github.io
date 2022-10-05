@@ -1,25 +1,13 @@
-#!/usr/bin/env sh
-
-# 确保脚本抛出遇到的错误
+cd ..
+# 终止一个错误
 set -e
+cd docs
+# 生成静态资源
+vuepress build
 
-# 生成静态文件
-npm run build
-
-# 进入生成的文件夹
-# cd public
-
-# git init
-git add .
+# 进入生成的构建文件夹
+cd Blog
+git init
+git add -A
 git commit -m 'deploy'
-
-git remote add origin git@github.com:salutonly/salutonly.github.io.git
-
-# git branch -M main
-# git push -u origin main
-
-git push -f git@github.com:salutonly/salutonly.github.io.git main
-
-
-cd ../
-# rm -rf public
+git push -f https://github.com/salutonly/salutonly.github.io.git master
